@@ -1,0 +1,25 @@
+// =============================================
+// Design tokens — tweak colours/fonts here
+// =============================================
+
+// Colours
+$red:         #b41e1e;
+$red-light:   #d63030;
+$dark:        #1a1a1a;
+$sidebar-bg:  #1e1e1e;
+$cream:       #faf7f2;
+$warm-white:  #fdfbf8;
+$gray:        #5a5a5a;
+$light-gray:  #e8e3dc;
+
+// Typography
+$font-display: 'Cormorant Garamond', Georgia, serif;
+$font-body:    'EB Garamond', Georgia, serif;
+$font-ui:      'Josefin Sans', sans-serif;
+
+// Layout
+$sidebar-width: 240px;
+$content-max:   860px;
+
+// Breakpoints
+$mobile: 768px;
