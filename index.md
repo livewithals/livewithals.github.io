@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About
-permalink: /about/
+permalink: /
 eyebrow: Welcome
 hero_image: hero-about.jpg
 description: >
@@ -20,6 +20,8 @@ His survival has been made possible through tracheostomy, a PEG feeding tube, po
 Managing ALS demanded countless hours of research, trial, and learning. We have been documenting everything on this website — our experiences, discoveries, and practical guidance — in the hope that other ALS families can benefit from what we've learned at every stage of the disease.
 
 If you are a PALS (Person with ALS) or CALS (Caregiver or family member) based in India, we encourage you to join the WhatsApp support group run by the [ALS Care and Support Foundation, India](https://linktr.ee/alscasindia) — the country's foremost ALS advocacy and support network.
+
+We are actively building out the website. In the meantime, visit [A Typical Day](/a-typical-day/) to watch videos of our daily caregiving routines.
 
 <div class="disclaimer-box">
 We are not medical professionals — just a family doing their best, sharing what has worked for us. Please read the <a href="/disclaimer/">Disclaimer</a> before referencing anything on this site.

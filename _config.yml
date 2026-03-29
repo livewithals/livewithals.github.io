@@ -69,3 +69,16 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+# Tell Jekyll to process _pages folder
+collections:
+  pages:
+    output: true
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
