@@ -1,12 +1,17 @@
 ---
-layout: default
-title: Our ALS Story
+layout: single
+title: "Our ALS Story"
 permalink: /our-als-story/
-eyebrow: Chapter by Chapter
-hero_image: hero-story.jpg
-description: >
-  The Narula family's ALS journey — from diagnosis in 2016 to home ICU care
-  nearly a decade later.
+author_profile: true
+sidebar:
+  nav: "main"
+toc: true
+toc_label: "Story"
+toc_sticky: true
+header:
+  overlay_image: /assets/images/hero-story.jpg
+  overlay_filter: 0.45
+  caption: "Narula Family"
 ---
 
 ## ALS Diagnosis
@@ -33,7 +38,7 @@ In June 2018, his speech became slurred so I ordered an affordable eye tracker f
 
 We felt his pain for the first time when — without seeing how much the surgery would cost or how painful the procedure was going to be — he said *"get my surgery done."* It was a moment of acceptance from him and we were taken aback by his reaction.
 
-He had a PEG feeding tube by September 2018 and it brought a lot of happiness when we saw him getting satisfied with good nutritious food and fluids. The feeding tube brought his smile back. Meanwhile, a non-invasive ventilator (BiPAP) was prescribed which made his breathing much more comfortable. In December 2018, we bought a wheelchair for him.
+He had a PEG feeding tube by September 2018 and it brought a lot of happiness when we saw him getting satisfied with good nutritious food and fluids. The feeding tube brought his smile back. Meanwhile, a BiPAP was prescribed which made his breathing much more comfortable. In December 2018, we bought a wheelchair for him.
 
 ---
 
@@ -41,13 +46,15 @@ He had a PEG feeding tube by September 2018 and it brought a lot of happiness wh
 
 After our return to Jaipur in March 2019, his health rapidly deteriorated. Papa struggled with cough and respiratory issues for around 2 months and finally collapsed with a mucus plug which led to an **emergency tracheostomy on May 11th, 2019.**
 
-The uncontrollable seizures in the ICU paralyzed him fully with a limited ability to communicate through eye movements and by raising his right hand. There was no time to mourn what was lost — we were always on go, always alert and ready to fight. We brought him back on a ventilator to our home ICU setup at the end of May 2019.
+The uncontrollable seizures in the ICU paralyzed him fully with a limited ability to communicate through eye movements and by raising his right hand. There was no time to mourn — we were always on go, always alert and ready to fight. We brought him back on a ventilator to our home ICU setup at the end of May 2019.
 
 ---
 
 ## Back to Home ICU
 
-The initial months were very difficult. We were shocked to know that "trained" ICU nurses were skipping his medicines, not maintaining proper hygiene, and were not attentive to his needs as basic as suctioning. After multiple replacements, we found dedicated nurses. In July 2019, we joined the ALS Care and Support Group. With the help of founder Miss Satvinder Kaur, we changed Papa's ventilator settings — a crucial step leading to improvement in his well-being.
+The initial months were very difficult. We were shocked to know that "trained" ICU nurses were skipping his medicines, not maintaining proper hygiene, and were not attentive to needs as basic as suctioning. After multiple replacements, we found dedicated nurses.
+
+In July 2019, we joined the ALS Care and Support Group. With the help of founder Miss Satvinder Kaur, we changed Papa's ventilator settings — a crucial step leading to improvement in his well-being.
 
 ---
 
@@ -55,12 +62,10 @@ The initial months were very difficult. We were shocked to know that "trained" I
 
 We lost our mother to pneumonia in **January 2020** which changed our lives and responsibilities forever. Reena and I decided to take a career break and serve Papa as his primary nurses.
 
-In February 2020, we had to admit Papa to the ICU due to severe uncontrollable diarrhea where we learned about his GI sepsis which has a 72% mortality rate. He made an incredible recovery. Lockdown brought the father-son-daughter trio closer. Papa's health improved a lot under our personalized care. We had understood that for taking care of PALS, *dedication, observation, and research are much more important than qualification.*
-
-In December 2020, doctors discouraged us from further treatment — his body started swelling and he was on the verge of kidney failure. We insisted on continuing. Miraculously, he recovered.
+In February 2020, Papa was admitted to the ICU due to severe diarrhea — GI sepsis with a 72% mortality rate. He made an incredible recovery. Lockdown brought the father-son-daughter trio closer. Papa's health improved a lot under our personalized care.
 
 <div class="pull-quote">
-<p>We kept working, experimenting, waiting, researching, improving our protocols iteratively based on his response and maintaining our faith. After continuous recursive learning, we came up with a feed chart, medications and list of protocols that worked for him. Ever since we have not visited any doctor or hospital.</p>
+<p>We kept working, experimenting, waiting, researching, improving our protocols iteratively based on his response and maintaining our faith. After continuous recursive learning, we came up with protocols that worked. Ever since we have not visited any doctor or hospital.</p>
 </div>
 
 ---

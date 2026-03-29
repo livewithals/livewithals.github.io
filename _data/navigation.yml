@@ -1,0 +1,53 @@
+# ============================================================
+# _data/navigation.yml
+# This drives the sidebar navigation on every page.
+# To add a page: add an entry here + create _pages/file.md
+# To remove: delete the entry (page file can stay)
+# To reorder: move entries up/down
+# ============================================================
+
+main:
+  - title: "About"
+    url: /about/
+
+  - title: "Disclaimer"
+    url: /disclaimer/
+
+  - title: "Our ALS Story"
+    url: /our-als-story/
+
+  - title: "A Typical Day"
+    url: /a-typical-day/
+
+  - title: "Invasive Replacement"
+    url: /invasive-replacement/
+
+  - title: "Caregiving Hacks"
+    url: /caregiving-hacks/
+
+  - title: "Home ICU Setup"
+    url: /home-icu-setup/
+
+  - title: "Maintenance Schedule"
+    url: /maintenance-schedule/
+
+  - title: "Diet Pattern"
+    url: /diet-pattern/
+
+  - title: "Research"
+    url: /research/
+    children:
+      - title: "When the Machine Lies"
+        url: /research/when-the-machine-lies/
+
+  - title: "Emergencies"
+    url: /emergencies/
+
+  - title: "FAQ"
+    url: /faq/
+
+  - title: "Gallery"
+    url: /gallery/
+
+  - title: "Contact Us"
+    url: /contact-us/

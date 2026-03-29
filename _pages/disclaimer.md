@@ -1,8 +1,13 @@
 ---
-layout: default
-title: Disclaimer
+layout: single
+title: "Disclaimer"
 permalink: /disclaimer/
-eyebrow: Important Notice
+author_profile: true
+sidebar:
+  nav: "main"
+toc: false
+toc_label: "Contents"
+toc_sticky: true
 ---
 
 This website documents the personal caregiving experience of the Narula family.

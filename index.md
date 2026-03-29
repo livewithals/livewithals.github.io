@@ -1,12 +1,14 @@
 ---
-layout: default
-title: About
+layout: single
+title: "About"
 permalink: /
-eyebrow: Welcome
-hero_image: hero-about.jpg
-description: >
-  A family caregiving resource for ALS patients on invasive ventilation.
-  Documenting our journey since 2016.
+author_profile: true
+sidebar:
+  nav: "main"
+toc: false
+header:
+  overlay_image: /assets/images/hero-about.jpg
+  overlay_filter: 0.4
 ---
 
 Amyotrophic Lateral Sclerosis (ALS), also known as Motor Neuron Disease (MND), is a rare, progressive, and currently incurable neurodegenerative condition. It attacks nerve cells in the brain and spinal cord, steadily robbing patients of their ability to walk, move, speak, eat, swallow, and breathe as voluntary muscles become permanently paralyzed. Throughout this process, the patient's mind remains completely intact — a fully conscious person trapped within a body they can no longer control.
@@ -21,8 +23,6 @@ Managing ALS demanded countless hours of research, trial, and learning. We have 
 
 If you are a PALS (Person with ALS) or CALS (Caregiver or family member) based in India, we encourage you to join the WhatsApp support group run by the [ALS Care and Support Foundation, India](https://linktr.ee/alscasindia) — the country's foremost ALS advocacy and support network.
 
-We are actively building out the website. In the meantime, visit [A Typical Day](/a-typical-day/) to watch videos of our daily caregiving routines.
-
-<div class="disclaimer-box">
+<div class="notice--als-disclaimer">
 We are not medical professionals — just a family doing their best, sharing what has worked for us. Please read the <a href="/disclaimer/">Disclaimer</a> before referencing anything on this site.
 </div>

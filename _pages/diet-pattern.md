@@ -1,10 +1,13 @@
 ---
-layout: default
-title: Diet Pattern
+layout: single
+title: "Diet Pattern"
 permalink: /diet-pattern/
-eyebrow: Nutrition
-hero_image: hero-diet.jpg
-description: PEG feeding schedule followed for our ALS father at home.
+author_profile: true
+sidebar:
+  nav: "main"
+toc: true
+toc_label: "Contents"
+toc_sticky: true
 ---
 
 The PEG feeding pattern we follow for our father can be summarised as follows:
@@ -34,10 +37,10 @@ Usually 6 fillers daily: 4 fillers of 250 ml and 2 fillers of 300 ml. Supplement
 
 **Grand total: 1200 ml solid, 2300 ml liquid.**
 
-<div class="tip-box">
+<div class="notice--als-tip">
 <p><strong>Important:</strong> We keep at least 90 minutes of gap between two fillers, as well as between a filler and a solid meal.</p>
 </div>
 
-<div class="disclaimer-box">
+<div class="notice--als-disclaimer">
 We are not medical professionals — just a family doing their best, sharing what has worked for us. Please read our <a href="/disclaimer/">disclaimer</a> before referencing anything on this site.
 </div>

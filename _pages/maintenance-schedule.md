@@ -1,8 +1,13 @@
 ---
-layout: default
+layout: single
 title: "Maintenance Schedule"
 permalink: /maintenance-schedule/
-eyebrow: Narula's ALS Diary
+author_profile: true
+sidebar:
+  nav: "main"
+toc: true
+toc_label: "Contents"
+toc_sticky: true
 ---
 
 *Content coming soon — paste your existing text here in Markdown format.*
@@ -13,5 +18,5 @@ TO ADD CONTENT:
 - Use ## for section headings, ### for subsections
 - Add images: ![caption](/assets/images/filename.jpg)
 - For equations: $inline$ or $$block$$ (add math: true to frontmatter)
-- For callout boxes: <div class="tip-box"><p>text</p></div>
+- For callout boxes: <div class="notice--als-tip"><p>text</p></div>
 -->

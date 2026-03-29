@@ -1,12 +1,13 @@
 ---
-layout: default
-title: Caregiving Hacks
-eyebrow: Practical Caregiving
+layout: single
+title: "Caregiving Hacks"
 permalink: /caregiving-hacks/
-hero_image: hero-hacks.jpg
-description: >
-  Practical tips, tricks, and homegrown solutions for ALS home ICU caregiving —
-  from the Narula family's years of hands-on experience.
+author_profile: true
+sidebar:
+  nav: "main"
+toc: true
+toc_label: "Contents"
+toc_sticky: true
 ---
 
 Good care for a PALS rarely follows a textbook. Over the years, we've learned that
@@ -14,7 +15,7 @@ resourcefulness and creativity are just as important as medical knowledge. This 
 is where we share the tips, tricks, and homegrown solutions that have made a real
 difference for us.
 
-<div class="disclaimer-box">
+<div class="notice--als-disclaimer">
 Please go through the <a href="/disclaimer/">disclaimer</a> before following any
 information on this website.
 </div>
@@ -45,7 +46,7 @@ An Ambu bag is a valuable dual-purpose tool:
 - **Emergency use** — when the primary ventilator fails; connect supplemental oxygen
   and increase rate until saturation stabilizes
 
-<div class="tip-box">
+<div class="notice--als-tip">
 <p><strong>Tip:</strong> Always keep a charged Ambu bag within arm's reach of the patient at all times.</p>
 </div>
 
@@ -88,7 +89,7 @@ This yields approximately **680 ml**, sufficient for ~17 uses at 40 ml per enema
 (from experience, 30 ml is often sufficient). Store at room temperature in a sterile
 airtight container.
 
-<div class="warning-box">
+<div class="notice--als-warning">
 <p><strong>Important:</strong> All components must be acquired and processed in the most sterile manner possible. Consult your physician before making any changes to the patient's care protocol.</p>
 </div>
 

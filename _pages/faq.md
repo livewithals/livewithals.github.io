@@ -1,10 +1,13 @@
 ---
-layout: default
-title: FAQ
+layout: single
+title: "FAQ"
 permalink: /faq/
-eyebrow: Frequently Asked Questions
-hero_image: hero-faq.jpg
-description: Common questions about ALS caregiving — BiPAP, feeding tube, tracheostomy decisions.
+author_profile: true
+sidebar:
+  nav: "main"
+toc: true
+toc_label: "Contents"
+toc_sticky: true
 ---
 
 <div class="faq-item">
@@ -58,6 +61,6 @@ The decision should be made collaboratively with open and honest discussions wit
 
 </div>
 
-<div class="disclaimer-box">
+<div class="notice--als-disclaimer">
 We are not medical professionals — just a family doing their best, sharing what has worked for us. Please read our <a href="/disclaimer/">disclaimer</a> before referencing anything on this site.
 </div>

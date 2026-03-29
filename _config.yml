@@ -1,84 +1,134 @@
-# =============================================
-# Narula's ALS Diary — Jekyll Configuration
-# =============================================
+# ============================================================
+# Narula's ALS Diary — Minimal Mistakes Jekyll Configuration
+# ============================================================
 
+theme: minimal-mistakes-jekyll
+
+# ---- Skin ----
+# Options: "default" | "dark" | "contrast" | "mint" | "sunrise" | "aqua" | "neon" | "plum"
+minimal_mistakes_skin: "default"
+
+# ---- Site Info ----
 title: "Narula's ALS Diary"
-tagline: "Life is Struggle & Struggle is Life"
+title_separator: "—"
+subtitle: "Life is Struggle & Struggle is Life"
+name: "Harsh Kumar Narula"
 description: >
   A family caregiving resource for ALS patients on invasive ventilation.
   Documenting our journey since 2016.
 url: "https://www.livewithals.com"
 baseurl: ""
+repository: ""  # your-github-username/livewithals
 
+# ---- Author ----
 author:
   name: "Harsh Kumar Narula"
-  url: "http://harshkumarnarula.com"
+  bio: >
+    Independent researcher and primary caregiver for his father, who has been
+    on invasive tracheostomy ventilation since 2019. Runs livewithals.com.
+  location: "Jaipur, India"
+  links:
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "http://harshkumarnarula.com"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@livewithals/about"
 
-last_updated: "March 12, 2026"
+# ---- Footer links ----
+footer:
+  links:
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/@livewithals/about"
+    - label: "ALS Support India"
+      icon: "fas fa-fw fa-heart"
+      url: "https://linktr.ee/alscasindia"
 
-markdown: kramdown
-highlighter: rouge
-permalink: /:path/
+# ---- Reading time & other display options ----
+show_date: false
+read_time: true
+words_per_minute: 160
+comments:
+  provider: false
+search: true           # enables built-in search
+search_full_content: true
 
+# ---- MathJax — LaTeX equations ----
+# This is all you need. Write $inline$ or $$block$$ anywhere in your .md files.
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 kramdown:
   input: GFM
   math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 
+# MathJax script loaded globally
+head_scripts:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
+
+after_footer_scripts:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
+
+# ---- Build ----
+markdown: kramdown
+highlighter: rouge
+permalink: /:path/
+timezone: Asia/Kolkata
+
+# ---- Plugins ----
 plugins:
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-include-cache
 
-# -----------------------------------------------
-# SIDEBAR NAVIGATION
-# Add/remove/reorder pages here
-# -----------------------------------------------
-navigation:
-  - title: "About"
-    url: "/about/"
-  - title: "Disclaimer"
-    url: "/disclaimer/"
-  - title: "Our ALS Story"
-    url: "/our-als-story/"
-  - title: "A Typical Day"
-    url: "/a-typical-day/"
-  - title: "Invasive Replacement"
-    url: "/invasive-replacement/"
-  - title: "Caregiving Hacks"
-    url: "/caregiving-hacks/"
-  - title: "Home ICU Setup"
-    url: "/home-icu-setup/"
-  - title: "Maintenance Schedule"
-    url: "/maintenance-schedule/"
-  - title: "Diet Pattern"
-    url: "/diet-pattern/"
-  - title: "Research"
-    url: "/research/"
-    children:
-      - title: "When the Machine Lies"
-        url: "/research/when-the-machine-lies/"
-  - title: "Emergencies"
-    url: "/emergencies/"
-  - title: "FAQ"
-    url: "/faq/"
-  - title: "Gallery"
-    url: "/gallery/"
-  - title: "Contact Us"
-    url: "/contact-us/"
-
-exclude:
-  - README.md
-  - Gemfile
-  - Gemfile.lock
-
-# Tell Jekyll to process _pages folder
+# ---- Collections (_pages folder) ----
 collections:
   pages:
     output: true
     permalink: /:path/
 
+# ---- Defaults ----
+# These apply to ALL pages automatically — no need to repeat in frontmatter
 defaults:
+  # All pages in _pages/
   - scope:
       path: ""
       type: pages
     values:
-      layout: default
+      layout: single
+      author_profile: true    # shows author card on left sidebar
+      read_time: false
+      sidebar:
+        nav: "main"           # uses navigation.yml "main" nav
+      toc: true               # automatic table of contents
+      toc_label: "On this page"
+      toc_sticky: true        # TOC stays visible as you scroll
+
+  # Root index.md
+  - scope:
+      path: "index.md"
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "main"
+      toc: false              # no TOC on home/about page
+
+  # Research pages — no author profile, wider content
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      sidebar:
+        nav: "main"
+
+# ---- Exclude from build ----
+exclude:
+  - README.md
+  - Gemfile.lock
+  - "*.zip"
