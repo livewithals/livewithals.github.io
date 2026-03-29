@@ -1,0 +1,61 @@
+<aside class="sidebar">
+
+  <div class="sidebar-brand">
+    <a href="{{ '/about/' | relative_url }}" class="brand-link">
+      <h1>Narula's <span>ALS</span> Diary</h1>
+    </a>
+    <div class="sidebar-tagline">livewithals.com</div>
+  </div>
+
+  <div class="sidebar-updated">
+    Website Last Updated on {{ site.last_updated }}
+  </div>
+
+  <nav class="sidenav" aria-label="Main navigation">
+    <ul>
+      {% for item in site.navigation %}
+      <li class="{% if item.children %}has-children{% endif %}">
+
+        {% if item.children %}
+          <!-- Item with dropdown -->
+          <div class="nav-row">
+            <a href="{{ item.url | relative_url }}"
+               class="{% if page.url == item.url or page.url contains item.url %}active{% endif %}">
+              {{ item.title }}
+            </a>
+            <button class="subnav-toggle"
+                    aria-expanded="{% if page.url contains item.url %}true{% else %}false{% endif %}"
+                    aria-label="Expand {{ item.title }}">
+              &#9658;
+            </button>
+          </div>
+          <ul class="subnav {% if page.url contains item.url %}open{% endif %}">
+            {% for child in item.children %}
+            <li>
+              <a href="{{ child.url | relative_url }}"
+                 class="{% if page.url == child.url %}active{% endif %}">
+                {{ child.title }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+
+        {% else %}
+          <!-- Normal item -->
+          <a href="{{ item.url | relative_url }}"
+             class="{% if page.url == item.url %}active{% endif %}">
+            {{ item.title }}
+          </a>
+        {% endif %}
+
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="sidebar-footer">
+    <a href="{{ site.author.url }}" target="_blank" rel="noopener">{{ site.author.name }}</a><br>
+    &copy; Narula's ALS Diary
+  </div>
+
+</aside>
