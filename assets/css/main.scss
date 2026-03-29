@@ -17,7 +17,11 @@ h1, h2, h3 {
   font-family: 'Cormorant Garamond', Georgia, serif;
 }
 
-.page__content p,
+.page__content p {
+  text-align: justify;
+  hyphens: auto;
+}
+
 .page__content li {
   font-family: 'EB Garamond', Georgia, serif;
   font-size: 1.05em;
