@@ -3,7 +3,10 @@
 <head>{% include head.html %}</head>
 <body>
 
-  <!-- Mobile toggle button -->
+  <!-- Overlay (mobile — tap outside to close sidebar) -->
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Hamburger toggle (mobile only) -->
   <button id="sidebar-toggle" class="mob-toggle" aria-label="Open navigation" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -11,17 +14,15 @@
   <!-- Sidebar -->
   {% include sidebar.html %}
 
-  <!-- Main content area -->
+  <!-- Main -->
   <div class="main">
 
     <div class="topbar">Website Last Updated on {{ site.last_updated }}</div>
 
-    <!-- Hero image — set hero_image: filename.jpg in page frontmatter -->
     {% if page.hero_image %}
     <div class="hero">
       <img src="{{ '/assets/images/' | append: page.hero_image | relative_url }}"
-           alt="{{ page.title }}"
-           loading="lazy">
+           alt="{{ page.title }}" loading="lazy">
       <div class="hero-overlay"></div>
     </div>
     {% endif %}
@@ -40,7 +41,7 @@
 
     {% include footer.html %}
 
-  </div><!-- /.main -->
+  </div>
 
 </body>
 </html>

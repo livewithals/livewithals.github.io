@@ -3,6 +3,8 @@
 <head>{% include head.html %}</head>
 <body>
 
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
   <button id="sidebar-toggle" class="mob-toggle" aria-label="Open navigation" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
@@ -28,7 +30,6 @@
         <span class="page-rule"></span>
       </header>
 
-      <!-- Research metadata bar -->
       {% if page.authors or page.date_published or page.pdf_link %}
       <div class="research-meta">
         {% if page.authors %}<span>{{ page.authors }}</span>{% endif %}

@@ -615,39 +615,165 @@ figure.photo {
 .mob-toggle {
   display: none;
   position: fixed;
-  top: 12px; left: 12px;
+  top: 0; left: 0;
   z-index: 999;
   background: $sidebar-bg;
   border: none;
-  border-radius: 4px;
-  padding: 9px 11px;
+  border-radius: 0 0 6px 0;
+  padding: 14px 14px 10px;
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.25);
 
   span {
     display: block;
-    width: 20px; height: 2px;
+    width: 22px; height: 2px;
     background: #fff;
     transition: all .3s;
+    border-radius: 2px;
   }
+
+  // Animate to X when open
+  &.is-open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  &.is-open span:nth-child(2) { opacity: 0; }
+  &.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+}
+
+// Overlay when sidebar is open on mobile
+.sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  z-index: 99;
+  &.visible { display: block; }
 }
 
 // =============================================
-// RESPONSIVE
+// RESPONSIVE — TABLET (max 1024px)
+// =============================================
+@media (max-width: 1024px) {
+  // Narrower sidebar on tablet
+  :root { --sidebar-w: 200px; }
+
+  .sidebar { width: 200px; }
+  .main { margin-left: 200px; }
+
+  .content-area { padding: 40px 36px 72px; }
+
+  nav.sidenav > ul > li > a,
+  .nav-row a {
+    font-size: 10px;
+    padding: 8px 16px;
+    letter-spacing: 1.2px;
+  }
+
+  .subnav li a { padding: 7px 16px 7px 28px; }
+  .sidebar-brand { padding: 22px 16px 18px; }
+  .sidebar-brand h1 { font-size: 18px; }
+  .sidebar-updated { padding: 8px 16px; }
+  .sidebar-footer { padding: 12px 16px; }
+}
+
+// =============================================
+// RESPONSIVE — MOBILE (max 768px)
 // =============================================
 @media (max-width: $mobile) {
+
+  // Body — prevent horizontal scroll
+  body { display: block; }
+
+  // Sidebar slides off-screen by default
   .sidebar {
+    width: 260px;
     transform: translateX(-100%);
-    transition: transform .28s ease;
+    transition: transform .28s cubic-bezier(.4,0,.2,1);
+    z-index: 300;
+
     &.open { transform: translateX(0); }
   }
 
-  .main { margin-left: 0; }
+  // Main takes full width
+  .main {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  // Show hamburger button
   .mob-toggle { display: flex; }
 
-  .topbar { padding: 32px 20px 8px; font-size: 9px; }
-  .content-area { padding: 36px 22px 60px; }
-  .site-footer { padding: 32px 22px; }
-  .hero { height: 220px; }
+  // Topbar — leave room for hamburger button
+  .topbar {
+    padding: 10px 16px 10px 60px;
+    font-size: 9px;
+    text-align: left;
+  }
+
+  // Hero shorter on mobile
+  .hero { height: 200px; }
+
+  // Content padding
+  .content-area {
+    padding: 28px 20px 60px;
+    max-width: 100%;
+  }
+
+  // Page title smaller
+  .page-title { font-size: clamp(24px, 7vw, 36px); }
+
+  // Prose font slightly smaller
+  .prose {
+    font-size: 16px;
+
+    // No drop cap on mobile — too large
+    > p:first-child::first-letter {
+      font-size: 3em;
+    }
+
+    // Tables — horizontal scroll
+    table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    // Code blocks
+    pre code { font-size: .78em; }
+  }
+
+  // Pull quote
+  .pull-quote {
+    padding: 18px 20px;
+    margin: 28px 0;
+    p { font-size: 1.05em; }
+  }
+
+  // Callout boxes
+  .disclaimer-box,
+  .tip-box,
+  .warning-box,
+  .finding-box { padding: 14px 16px; }
+
+  // Photo pairs stack vertically
+  .photo-pair {
+    grid-template-columns: 1fr;
+    img { height: auto; max-height: 280px; object-fit: cover; }
+  }
+
+  // Footer
+  .site-footer { padding: 32px 20px; }
+
+  // Catchphrase
+  .catchphrase p { font-size: 18px; }
+}
+
+// =============================================
+// RESPONSIVE — SMALL MOBILE (max 400px)
+// =============================================
+@media (max-width: 400px) {
+  .content-area { padding: 24px 16px 56px; }
+  .prose { font-size: 15.5px; }
+  .page-title { font-size: 22px; }
+  .hero { height: 160px; }
 }
