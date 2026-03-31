@@ -11,9 +11,6 @@ toc_sticky: true
 header:
   overlay_image: /assets/images/hero-research.jpg
   overlay_filter: 0.5
-authors: "Harsh Kumar Narula"
-date_published: "2025"
-pdf_link: "https://drive.google.com/file/d/1q7m-QBSKB7Ku7cXuZpQzywNuHiXjT6vC/view?usp=drive_link"
 ---
 
 <div class="research-meta">

@@ -2,7 +2,7 @@
 # Narula's ALS Diary — Minimal Mistakes Jekyll Configuration
 # ============================================================
 
-remote_theme: mmistakes/minimal-mistakes
+theme: minimal-mistakes-jekyll
 
 # ---- Skin ----
 # Options: "default" | "dark" | "contrast" | "mint" | "sunrise" | "aqua" | "neon" | "plum"
@@ -100,13 +100,13 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true    # shows author card on left sidebar
+      author_profile: true
       read_time: false
       sidebar:
-        nav: "main"           # uses navigation.yml "main" nav
-      toc: true               # automatic table of contents
+        nav: "main"
+      toc: true
       toc_label: "On this page"
-      toc_sticky: true        # TOC stays visible as you scroll
+      toc_sticky: true
 
   # Root index.md
   - scope:
@@ -132,8 +132,3 @@ exclude:
   - README.md
   - Gemfile.lock
   - "*.zip"
-  - vendor/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/

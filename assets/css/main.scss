@@ -1,16 +1,12 @@
 ---
 # assets/css/main.scss
-# Entry point — imports MM then our overrides
 ---
 
-// Import Minimal Mistakes
 @import "minimal-mistakes";
 
 // ============================================================
-// CUSTOM FONTS
+// FONTS
 // ============================================================
-// These are loaded in _includes/head/custom.html
-
 .page__title,
 .archive__item-title,
 h1, h2, h3 {
@@ -36,7 +32,7 @@ figcaption {
 }
 
 // ============================================================
-// RED ACCENT OVERRIDES
+// RED ACCENT
 // ============================================================
 $als-red: #b41e1e;
 
@@ -48,23 +44,27 @@ a {
 h1, h2, h3 { color: $als-red; }
 
 .nav__list a.active,
-.nav__list a:hover {
-  color: $als-red !important;
-}
+.nav__list a:hover { color: $als-red !important; }
 
-// Active nav item indicator
 .nav__list .active > a {
   border-left: 3px solid $als-red;
   padding-left: 0.75em;
 }
 
 // ============================================================
-// CALLOUT BOXES
-// These work by writing HTML in your .md files:
-// <div class="notice--als-disclaimer">text</div>
+// DISABLE PREVIOUS / NEXT PAGINATION
 // ============================================================
+.page__footer-follow,
+.pagination,
+nav.pagination,
+.page__nav,
+.page__pagination {
+  display: none !important;
+}
 
-// Disclaimer box (orange-red border)
+// ============================================================
+// CALLOUT BOXES
+// ============================================================
 .notice--als-disclaimer {
   background: #fff8f0 !important;
   border-left: 4px solid $als-red !important;
@@ -73,19 +73,16 @@ h1, h2, h3 { color: $als-red; }
   a { color: $als-red; }
 }
 
-// Tip box (green)
 .notice--als-tip {
   background: #f0f7f0 !important;
   border-left: 4px solid #4a8a4a !important;
 }
 
-// Warning box (red)
 .notice--als-warning {
   background: #fff4f0 !important;
   border-left: 4px solid #c04020 !important;
 }
 
-// Key finding box (research)
 .notice--als-finding {
   background: #fdfbf8 !important;
   border-top: 3px solid $als-red !important;
@@ -101,7 +98,6 @@ h1, h2, h3 { color: $als-red; }
 
 // ============================================================
 // PULL QUOTE
-// Usage in .md: <div class="pull-quote"><p>text</p></div>
 // ============================================================
 .pull-quote {
   border-left: 3px solid $als-red;
@@ -130,14 +126,15 @@ h1, h2, h3 { color: $als-red; }
     margin: 0;
     position: relative;
     z-index: 1;
+    text-align: left !important;
   }
 }
 
 // ============================================================
-// CATCHPHRASE (used in Our ALS Story)
+// CATCHPHRASE
 // ============================================================
 .catchphrase {
-  text-align: center;
+  text-align: center !important;
   padding: 1.5em 0;
   border-top: 1px solid #e8e3dc;
   border-bottom: 1px solid #e8e3dc;
@@ -149,11 +146,12 @@ h1, h2, h3 { color: $als-red; }
     font-style: italic;
     color: $als-red;
     margin: 0;
+    text-align: center !important;
   }
 }
 
 // ============================================================
-// SIGNATURE BLOCK
+// SIGNATURE
 // ============================================================
 .signature {
   text-align: right;
@@ -178,13 +176,12 @@ h1, h2, h3 { color: $als-red; }
 }
 
 // ============================================================
-// FAQ ITEMS
+// FAQ
 // ============================================================
 .faq-item {
   margin-bottom: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid #e8e3dc;
-
   &:last-child { border: none; }
 }
 
@@ -197,8 +194,7 @@ h1, h2, h3 { color: $als-red; }
 }
 
 // ============================================================
-// MATHJAX / EQUATIONS
-// Equations render automatically — this just adds some spacing
+// MATHJAX
 // ============================================================
 .MathJax_Display,
 mjx-container[display="true"] {
@@ -207,18 +203,8 @@ mjx-container[display="true"] {
   margin: 1.2em 0 !important;
 }
 
-// Equation block with box
-.equation-block {
-  background: #fdfbf8;
-  border: 1px solid #e8e3dc;
-  padding: 1em 1.5em;
-  margin: 1.5em 0;
-  text-align: center;
-  overflow-x: auto;
-}
-
 // ============================================================
-// RESEARCH META BAR
+// RESEARCH META — show only once (hide the duplicate in TOC area)
 // ============================================================
 .research-meta {
   font-family: 'Josefin Sans', sans-serif;
@@ -229,21 +215,15 @@ mjx-container[display="true"] {
   margin-bottom: 1.5em;
   padding-bottom: 1em;
   border-bottom: 1px solid #e8e3dc;
-
   span { color: $als-red; }
   a { color: $als-red; }
 }
 
-// ============================================================
-// HERO IMAGE HEADER
-// Set header.image in page frontmatter — MM handles the rest
-// ============================================================
-.page__hero--overlay {
-  .page__title { color: #fff !important; text-shadow: 1px 1px 4px rgba(0,0,0,.5); }
-}
+// Hide the auto-generated page meta (date, read time) on research pages
+.page__meta { display: none; }
 
 // ============================================================
-// TABLE IMPROVEMENTS
+// TABLE
 // ============================================================
 table {
   th {
@@ -254,11 +234,9 @@ table {
 }
 
 // ============================================================
-// SIDEBAR SECTION HEADERS
-// These are the ALL CAPS group labels in navigation
+// SIDEBAR SECTION HEADERS (OUR JOURNEY, DAILY CAREGIVING etc.)
 // ============================================================
 .nav__list .nav__items {
-  // Section header items (no URL — just title)
   li > span,
   li > strong {
     display: block;
@@ -266,7 +244,7 @@ table {
     font-size: 0.6em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: #b41e1e;
+    color: $als-red;
     padding: 1.2em 0 0.4em 0;
     border-bottom: 1px solid #e8e3dc;
     margin-bottom: 0.3em;
