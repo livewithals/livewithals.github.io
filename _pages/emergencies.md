@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Emergencies"
+title: "Emergency Management"
 permalink: /emergencies/
 author_profile: true
 sidebar:

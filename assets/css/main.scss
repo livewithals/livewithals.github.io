@@ -252,3 +252,24 @@ table {
   }
   tr:nth-child(even) td { background: #fdfbf8; }
 }
+
+// ============================================================
+// SIDEBAR SECTION HEADERS
+// These are the ALL CAPS group labels in navigation
+// ============================================================
+.nav__list .nav__items {
+  // Section header items (no URL — just title)
+  li > span,
+  li > strong {
+    display: block;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #b41e1e;
+    padding: 1.2em 0 0.4em 0;
+    border-bottom: 1px solid #e8e3dc;
+    margin-bottom: 0.3em;
+    font-weight: 600;
+  }
+}

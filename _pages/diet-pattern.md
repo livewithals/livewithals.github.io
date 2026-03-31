@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "Diet Pattern"
+title: "Nutrition & Diet"
 permalink: /diet-pattern/
 author_profile: true
 sidebar:
