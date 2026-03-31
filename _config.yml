@@ -129,3 +129,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Disable top navigation bar entirely  
+masthead_title: " "
