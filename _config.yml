@@ -128,7 +128,16 @@ defaults:
         nav: "main"
 
 # ---- Exclude from build ----
-exclude:
+  exclude:
   - README.md
   - Gemfile.lock
   - "*.zip"
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
