@@ -2,7 +2,7 @@
 # Narula's ALS Diary — Minimal Mistakes Jekyll Configuration
 # ============================================================
 
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 # ---- Skin ----
 # Options: "default" | "dark" | "contrast" | "mint" | "sunrise" | "aqua" | "neon" | "plum"
