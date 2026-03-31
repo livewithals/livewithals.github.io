@@ -132,3 +132,8 @@ exclude:
   - README.md
   - Gemfile.lock
   - "*.zip"
+  - vendor/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
