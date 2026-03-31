@@ -18,7 +18,7 @@ description: >
   Documenting our journey since 2016.
 url: "https://www.livewithals.com"
 baseurl: ""
-repository: ""  # your-github-username/livewithals
+repository: ""
 
 # ---- Author ----
 author:
@@ -45,31 +45,17 @@ footer:
       icon: "fas fa-fw fa-heart"
       url: "https://linktr.ee/alscasindia"
 
-# ---- Reading time & other display options ----
+# ---- Display options ----
 show_date: false
-read_time: true
+read_time: false
 words_per_minute: 160
 comments:
   provider: false
-search: true           # enables built-in search
+search: true
 search_full_content: true
 
-# ---- MathJax — LaTeX equations ----
-# This is all you need. Write $inline$ or $$block$$ anywhere in your .md files.
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-kramdown:
-  input: GFM
-  math_engine: mathjax
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
-
-# MathJax script loaded globally
+# ---- MathJax ----
 head_scripts:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
-
-after_footer_scripts:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
 
 # ---- Build ----
@@ -78,6 +64,14 @@ highlighter: rouge
 permalink: /:path/
 timezone: Asia/Kolkata
 
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
 # ---- Plugins ----
 plugins:
   - jekyll-feed
@@ -85,16 +79,14 @@ plugins:
   - jekyll-seo-tag
   - jekyll-include-cache
 
-# ---- Collections (_pages folder) ----
+# ---- Collections ----
 collections:
   pages:
     output: true
     permalink: /:path/
 
 # ---- Defaults ----
-# These apply to ALL pages automatically — no need to repeat in frontmatter
 defaults:
-  # All pages in _pages/
   - scope:
       path: ""
       type: pages
@@ -107,8 +99,6 @@ defaults:
       toc: true
       toc_label: "On this page"
       toc_sticky: true
-
-  # Root index.md
   - scope:
       path: "index.md"
     values:
@@ -116,9 +106,7 @@ defaults:
       author_profile: true
       sidebar:
         nav: "main"
-      toc: false              # no TOC on home/about page
-
-  # Research pages — no author profile, wider content
+      toc: false
   - scope:
       path: "_pages"
       type: pages
@@ -128,7 +116,7 @@ defaults:
         nav: "main"
 
 # ---- Exclude from build ----
-  exclude:
+exclude:
   - README.md
   - Gemfile.lock
   - "*.zip"
