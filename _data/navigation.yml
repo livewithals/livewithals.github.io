@@ -4,56 +4,52 @@
 # ============================================================
 
 main:
-  - title: "About"
+  - title: "Start Here"
     url: /about/
 
+  - title: "About"
+    url: /about/
   - title: "Disclaimer"
     url: /disclaimer/
 
-  - title: "OUR JOURNEY"
+  - title: "Our Journey"
+    children:
+      - title: "Our ALS Story"
+        url: /our-als-story/
 
-  - title: "Our ALS Story"
-    url: /our-als-story/
+  - title: "Caregiving Guides"
+    children:
+      - title: "A Typical Day"
+        url: /a-typical-day/
+      - title: "Nutrition & Diet"
+        url: /diet-pattern/
+      - title: "Maintenance Schedule"
+        url: /maintenance-schedule/
 
-  - title: "DAILY CAREGIVING"
+  - title: "Clinical Procedures"
+    children:
+      - title: "Invasive Replacement"
+        url: /invasive-replacement/
+      - title: "Emergency Management"
+        url: /emergencies/
 
-  - title: "A Typical Day"
-    url: /a-typical-day/
+  - title: "Equipment & Setup"
+    children:
+      - title: "Home ICU Setup"
+        url: /home-icu-setup/
+      - title: "Caregiving Hacks"
+        url: /caregiving-hacks/
 
-  - title: "Nutrition & Diet"
-    url: /diet-pattern/
+  - title: "Research"
+    children:
+      - title: "When the Machine Lies"
+        url: /research/when-the-machine-lies/
 
-  - title: "Maintenance Schedule"
-    url: /maintenance-schedule/
-
-  - title: "CLINICAL PROCEDURES"
-
-  - title: "Invasive Replacement"
-    url: /invasive-replacement/
-
-  - title: "Emergency Management"
-    url: /emergencies/
-
-  - title: "EQUIPMENT & SETUP"
-
-  - title: "Home ICU Setup"
-    url: /home-icu-setup/
-
-  - title: "Caregiving Hacks"
-    url: /caregiving-hacks/
-
-  - title: "RESEARCH"
-
-  - title: "When the Machine Lies"
-    url: /research/when-the-machine-lies/
-
-  - title: "CONNECT"
-
-  - title: "FAQ"
-    url: /faq/
-
-  - title: "Gallery"
-    url: /gallery/
-
-  - title: "Contact Us"
-    url: /contact-us/
+  - title: "Connect"
+    children:
+      - title: "FAQ"
+        url: /faq/
+      - title: "Gallery"
+        url: /gallery/
+      - title: "Contact Us"
+        url: /contact-us/
