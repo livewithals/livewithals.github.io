@@ -1,16 +1,13 @@
-# ============================================================
 # Narula's ALS Diary — Minimal Mistakes Jekyll Configuration
-# ============================================================
 
-remote_theme: mmistakes/minimal-mistakes@4.26.2
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
 
 # ---- Skin ----
-# Options: "default" | "dark" | "contrast" | "mint" | "sunrise" | "aqua" | "neon" | "plum"
-minimal_mistakes_skin: "default"
+minimal_mistakes_skin: "contrast"   # options: default, dark, contrast, mint, sunrise, aqua, neon, plum
 
 # ---- Site Info ----
 title: "Narula's ALS Diary"
-title_separator: "—"
+title_separator: " — "
 subtitle: "Life is Struggle & Struggle is Life"
 name: "Harsh Kumar Narula"
 description: >
@@ -18,14 +15,15 @@ description: >
   Documenting our journey since 2016.
 url: "https://www.livewithals.com"
 baseurl: ""
-repository: ""
+repository: "livewithals/livewithals.github.io"
 
 # ---- Author ----
 author:
   name: "Harsh Kumar Narula"
   bio: >
-    Independent researcher and primary caregiver for his father, who has been
-    on invasive tracheostomy ventilation since 2019. Runs livewithals.com.
+    Independent researcher and primary caregiver for his father,
+    who has been on invasive tracheostomy ventilation since 2019.
+    Runs livewithals.com.
   location: "Jaipur, India"
   links:
     - label: "Website"
@@ -47,30 +45,13 @@ footer:
 
 # ---- Display options ----
 show_date: false
-read_time: false
+read_time: true
 words_per_minute: 160
 comments:
   provider: false
 search: true
 search_full_content: true
-
-# ---- MathJax ----
-head_scripts:
-  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
-
-# ---- Build ----
-markdown: kramdown
-highlighter: rouge
-permalink: /:path/
-timezone: Asia/Kolkata
-
-kramdown:
-  input: GFM
-  math_engine: mathjax
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
+breadcrumbs: true   # NEW: enable breadcrumbs
 
 # ---- Plugins ----
 plugins:
@@ -78,12 +59,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-include-cache
-
-# ---- Collections ----
-collections:
-  pages:
-    output: true
-    permalink: /:path/
 
 # ---- Defaults ----
 defaults:
@@ -93,7 +68,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: true
       sidebar:
         nav: "main"
       toc: true
@@ -102,7 +77,7 @@ defaults:
   - scope:
       path: "index.md"
     values:
-      layout: single
+      layout: splash   # NEW: splash layout for homepage
       author_profile: true
       sidebar:
         nav: "main"
@@ -125,10 +100,3 @@ exclude:
   - gemfiles/
   - Gemfile
   - vendor/
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-
-# Disable top navigation bar entirely  
-masthead_title: " "
